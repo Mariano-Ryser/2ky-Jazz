@@ -8,8 +8,8 @@ Goels:
 "Create a good website with an understandable code and have fun"
 
 Pages:
-Home: Mariano
-About: Efrat
-Zeitplan: Patrik
-Contact us + Anmeldung: Jacqueline
-Lektionen: Ksenija
+Home: Mariano page no. 1
+About: Efrat page no. 2
+Zeitplan: Patrik page no. 3
+Contact us + Anmeldung: Jacqueline page no. 4
+Lektionen: Ksenija page no. 5
