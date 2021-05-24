@@ -1,3 +1,21 @@
+function getInputText(selector) { 
+    var element = document.querySelector(selector);
+
+    if (element) {
+        log(selector, element.value);
+        return element.value;
+    }
+    else {
+        alert("Input element '" + selector + "' could not be found.");
+        return "";
+    }
+}
+
+function log(label, value) {
+    console.log(label + ': ' + value);
+}
+/* Dear Coaches, some how i can"t get it ;)*/ 
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -58,45 +76,44 @@
             <!--logo-->
             <div class="col-12 justify-content-center py-3"><img src="/LogoMakr-5h3Zc0.png"></div>
           </div>
+          <!--comment field-->
+          <div class="container-fluid">
+            <form> 
+                <div class="form-col-md-4">
+                    <div class="form-group col-md-4">
+                        <label for="inputName"><p>Name</p></label>
+                        <input type="text" class="form-control" id="inputName" placeholder="N...">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputSurname"><p>Surname</p></label>
+                        <input type="text" class="form-control" id="inpuSurname" placeholder="S...">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputEmail"><p>Email</p></label>
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelpId" placeholder="example@help.com">
+                    </div>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputLesson"><p>Lesson</p></label>
+                        <select id="inputLesson" class="form-control">
+                            <option selected="">Select</option>
+                            <option>Piano</option>
+                            <option>Saxophone</option>
+                            <option>Double Bass</option>
+                            <option>Drums</option>
+                            <option>Guitar</option>
+                            <option>Singing</option>
+                        </select> 
+                    <div class="form-group">  
+                    <label for="inputEmail">Comment</label>     
+                    <textarea name="Comment" id="" cols="30" rows="10" class="form-text text-muted form-control">
+                    Enter text here...</textarea>
+                  </div>
+                </div>
+            </form>
+            <button onclick="validateFormFields();">Submit</button>
           </div>       
         </div>
-        <!--comment field-->
-        <div class="container-fluid">
-          <form>
-            <h2>Comments</h2> 
-              <div class="form-col-md-4">
-                  <div class="form-group col-md-4">
-                      <label for="inputName"><p>Name</p></label>
-                      <input type="text" class="form-control" id="inputName" placeholder="N...">
-                  </div>
-                  <div class="form-group col-md-4">
-                      <label for="inputSurname"><p>Surname</p></label>
-                      <input type="text" class="form-control" id="inpuSurname" placeholder="S...">
-                  </div>
-                  <div class="form-group col-md-4">
-                      <label for="inputEmail"><p>Email</p></label>
-                      <input type="email" class="form-control" id="email" aria-describedby="emailHelpId" placeholder="example@help.com">
-                  </div>
-              </div>
-              <div class="form-group col-md-4">
-                  <label for="inputLesson"><p>Lesson</p></label>
-                      <select id="inputLesson" class="form-control">
-                          <option selected="">Select</option>
-                          <option>Piano</option>
-                          <option>Saxophone</option>
-                          <option>Double Bass</option>
-                          <option>Drums</option>
-                          <option>Guitar</option>
-                          <option>Singing</option>
-                      </select> 
-                  <div class="form-group">  
-                  <label for="inputEmail"><p>Comment</p></label>     
-                  <textarea name="Comment" id="" cols="30" rows="10" class="form-text text-muted form-control">
-                  Enter text here...</textarea>
-                </div>
-              </div>
-          </form>
-          <button onclick="validateFormFields();">Submit</button>
       </div>
       
      
