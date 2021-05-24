@@ -18,12 +18,9 @@
             <!--left content-->
             <div class="col-sm-4 photo">
                 <!--vertical picture -->
-                <img src="https://images.pexels.com/photos/5650687/pexels-photo-5650687.jpeg">
-                
+                <img src="https://images.pexels.com/photos/5650687/pexels-photo-5650687.jpeg">   
             </div> 
-            
             <br>
-            
             <!--right content-->
             <div class="col-sm-8 learning">
                 <h1>Learning to Jazz</h1>
@@ -83,45 +80,44 @@
                 <!--logo-->
                 <div class="col-12 justify-content-center py-3"><img src="/LogoMakr-5h3Zc0.png"></div>
                 </div>
-            </div>       
+            </div>
         </div>
-    <!--comment field-->
-    <div class="container-fluid form">
-        <form> 
-            <div class="form-col-md-6"><h2>Comments Field</h2>
-                <div class="form-group col-md-6">
-                    <label for="inputName"><h3>Name</h3></label>
-                    <input type="text" class="form-control" id="inputName" placeholder="N...">
+        <!--comment field-->
+        <div class="container-fluid">
+            <form>
+                <div class="form-col-md-4"><h2>Comments Field</h2>
+                    <div class="form-group col-md-4">
+                        <label for="inputName"><h3>Name</h3></label>
+                        <input type="text" class="form-control" id="inputName" placeholder="N...">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputSurname"><h3>Surname</h3></label>
+                        <input type="text" class="form-control" id="inpuSurname" placeholder="S...">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputEmail"><h3>Email</h3></label>
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelpId" placeholder="example@help.com">
+                    </div>
                 </div>
-                <div class="form-group col-md-6">
-                    <label for="inputSurname"><h3>Surname</h3></label>
-                    <input type="text" class="form-control" id="inpuSurname" placeholder="S...">
+                <div class="form-group col-md-4">
+                    <label for="inputLesson"><h3>Lesson</h3></label>
+                        <select id="inputLesson" class="form-control">
+                            <option selected="">Select</option>
+                            <option>Piano</option>
+                            <option>Saxophone</option>
+                            <option>Double Bass</option>
+                            <option>Drums</option>
+                            <option>Guitar</option>
+                            <option>Singing</option>
+                        </select> 
+                    <div class="form-group">  
+                        <label for="inputEmail"><h3>Comment</h3></label>     
+                            <textarea id="comment" cols="30" rows="10" class="form-text text-muted form-control" placeholder="Enter text here"></textarea>
+                    </div>
                 </div>
-                <div class="form-group col-md-6">
-                    <label for="inputEmail"><h3>Email</h3></label>
-                    <input type="email" class="form-control" id="email" aria-describedby="emailHelpId" placeholder="example@help.com">
-                </div>
-            </div>
-            <div class="form-group col-md-6">
-                <label for="inputLesson"><h3>Lesson</h3></label>
-                    <select id="inputLesson" class="form-control">
-                        <option selected="">Select</option>
-                        <option>Piano</option>
-                        <option>Saxophone</option>
-                        <option>Double Bass</option>
-                        <option>Drums</option>
-                        <option>Guitar</option>
-                        <option>Singing</option>
-                    </select> 
-                <div class="form-group">  
-                <label for="inputEmail"><h3>Comment</h3></label>     
-                <textarea name="Comment" id="" cols="30" rows="10" class="form-text text-muted form-control">
-                Enter text here...</textarea>
-            </div>
-            </div>
-        </form>
+            </form>
         <button onclick="validateFormFields();"><h3>Submit</h3></button>
-    </div>
+    </div>  
     
    
   <!--footer-->

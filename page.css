@@ -9,10 +9,14 @@ body{
     width: 100%;
     padding: 0;
 }
-.form{
+.form {
+    float: right;   
+}
+#field {
     background-image: url("/LogoMakr-9hUjML.png");                              
     background-repeat: no-repeat;                                    
-    background-size: cover;
+    background-size: cover; 
+
 }
 .block img{
     border: rgb(11, 29, 4) solid;
