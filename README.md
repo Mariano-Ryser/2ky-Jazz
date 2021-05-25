@@ -3,7 +3,7 @@ Roles:
 - Jacqueline-Mate
 - Ksenija-Mate
 - Mariano-designer dev.
-- Patrick-dev jr
+- Patrick-dev. jr.
 - Efrat dev.
 
 Contract:
@@ -23,5 +23,5 @@ Pages:
 - Home: Mariano page no. 1
 - About: Efrat page no. 2
 - Zeitplan: Patrick page no. 3
-- Contact us + Anmeldung: Jacqueline page no. 4
+- Anmeldung: Jacqueline page no. 4
 - Lektionen: Ksenija page no. 5
