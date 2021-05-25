@@ -22,13 +22,6 @@ function validateFormFields() {
 }
 
 
-
-//------check field fill----///
-
-
-
-//----activate all selectors----//
-
 function getInputText(selector) { 
     var element = document.querySelector(selector);
 

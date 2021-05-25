@@ -11,17 +11,45 @@
     <link rel="stylesheet" href="lesson.css">
 </head>
   <body>
-    <!--navi spot-->
-    <div class="container-fluid">  </div>
+    <!--/////----navi spot--////////-->
+    <div class="container-fluid"> <div class="BoxNav mb-5 ">
+        <nav class="navbar navbar-expand-lg pb-5"> 
+        <!---///// logo --//////////-->
+        <img src="/LogoMakr-5h3Zc0.png" style= "width: 210px; margin-left: 20px;">
+        <!---//////-----nav bar---///////-->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href=""><p class="pn">HOME</p></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href=""><p class="pn">ABOUT</p></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href=""><p class="pn">PROGRAMS</p></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href=""><p class="pn">CONTACT</p></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href=""><p class="pn">LESSON</p></a>
+            </li>
+          </ul>
+        </div>
+        <!--/////----lapm watching right-----////////-->
+        <img src="/lampe.png">
+        </nav>  
 
         <div class="row">
-            <!--left content-->
+            <!--///////----left content-----///////-->
             <div class="col-sm-4 photo">
-                <!--vertical picture -->
-                <img src="https://images.pexels.com/photos/5650687/pexels-photo-5650687.jpeg">   
+                <!--///////---vertical picture---///// -->
+                <img src="https://images.pexels.com/photos/5650687/pexels-photo-5650687.jpeg"> 
+                <!--////////--lamp down--//////--> 
+                <img src="/lampe5.png">
             </div> 
             <br>
-            <!--right content-->
+            <!--///////-----right content----///////-->
             <div class="col-sm-8 learning">
                 <h1>Learning to Jazz</h1>
                 <p>Another advantage of being our member.
@@ -30,8 +58,8 @@
                     Two days a week, a great choice and a convenient time. 
                     Plus, we are open to new proposals and suggestions.
                 </p>
-                <div class="row"><!---do img buttons linkto contact, make them bigger-->
-                    <!--left column-->
+                <div class="row"><!---do them bigger-->
+                    <!--//////----left column-----//////-->
                     <div class="col-md-6 day saturday";>
                         <h2>Saturday</h2>
                         <br>
@@ -54,7 +82,7 @@
                             </p> 
                         </div>
                     </div>
-                    <!--right column-->
+                    <!--////////----right column------///////////-->
                     <div class="col-md-6 day sunday";>
                         <h2>Sunday</h2>
                         <br>
@@ -77,13 +105,11 @@
                             </p>
                         </div> 
                     </div>
-                    <!--logo-->
-                    <div class="col-12 justify-content-center py-3"><img src="/LogoMakr-5h3Zc0.png"></div>
                 </div>
             </div>
         </div>
-        <!--comment field-->
-        <div class="container-fluid">
+        <!--///////--comment field---///////-->
+        <div class="container-fluid field">
             <form>
                 <div class="form-col-md-4"><h2>Comments Field</h2>
                     <div class="form-group col-md-4">
@@ -116,14 +142,38 @@
                     </div>
                 </div>
             </form>
-        <button onclick="validateFormFields();"><h3>Submit</h3></button>
-    </div>  
-    
-    
-  <!--footer-->
+            <!-- //////-----go to top button---////--->
+            <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+            <!---////----- submit button----/////------>
+            <button id="submitBtn" onclick="validateFormFields();"><h3>Submit</h3></button>
+        </div>  
+  <!---//////------footer-----/////-->
   <div class="container-fluid">
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-  </div>
+      <div id="df" class="container-fluid footer text-center sticky-bottom ">
+            <div class="row">
+                <div class= "col-sm-6 col-md-6 col-lg-6 "> 
+                      <a href="">
+                     <img class="icon" alt="Instagram Icon" src="https://static.wixstatic.com/media/d7ffe259c9e54f59837481b3dd0130eb.png/v1/fill/w_30,h_30,al_c,q_85,usm_0.66_1.00_0.01/d7ffe259c9e54f59837481b3dd0130eb.webp" >
+                    </a>
+                      <a href="">
+                     <img class="icon" alt="Facebook Icon" src="https://static.wixstatic.com/media/d3470ec8ca26475da4b228f0199b5d3d.png/v1/fill/w_30,h_30,al_c,q_85,usm_0.66_1.00_0.01/d3470ec8ca26475da4b228f0199b5d3d.webp" >
+                    </a>
+                      <a href="">
+                     <img class="icon" alt="Twiter Google" src="https://static.wixstatic.com/media/aeb686ff41244d85bc1232fcf7325ec0.png/v1/fill/w_30,h_30,al_c,q_85,usm_0.66_1.00_0.01/aeb686ff41244d85bc1232fcf7325ec0.webp" >
+                    </a> 
+                </div> 
+            </div>
+            <div class="row text-center ">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <p> © 2kyJazz.ADP. 
+                    <a href="https://www.google.ch/maps/place/Seestrasse+56,+8802+Kilchberg/@47.3304318,8.5436669,17z/data=!3m1!4b1!4m5!3m4!1s0x479aa776ea2f0541:0x74fd3d32c36c6434!8m2!3d47.3304318!4d8.5458556">
+                    rabestrasse 86</a>, 8077 Zürich, Schweiz<br>
+                    Tel. 044 / 855 53 13, <a href="">2kyJazz@gmail.ch <br></a><br>
+                    <u>Webdesign by <b> ®2kyJazz - Team</u></b> </p>
+                </div>    
+            </div>
+        </div> 
+    </div>
 
 
 
@@ -137,3 +187,12 @@
     <script src="lesson.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
