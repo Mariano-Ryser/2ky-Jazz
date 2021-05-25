@@ -1,5 +1,5 @@
 # 2ky-Jazz
-Roles: Jacqueline-Mate, Ksenija-Mate, Mariano-designer dev, Patrik-dev, Efrat dev.
+Roles: Jacqueline-Mate, Ksenija-Mate, Mariano-designer dev, Patrik-dev, Efrat-Scrum Master + dev.
 Contract: Respect, have fun, be on time, participate and try to be updated.
 Goels:
 "That we all be happy with our product."
