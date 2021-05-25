@@ -1,0 +1,81 @@
+* {
+    font-family: 'Architects Daughter', cursive;
+    
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    /*background-color: #DFDFDF;*/
+    background-image:url(1.jpg);
+    color:rgb(245, 236, 236);
+    font-family: 'Architects Daughter', cursive;
+    font-size: 20px;
+    background-size:contain;
+}
+body{
+    background: transparent;
+    font-family: 'Architects Daughter', cursive;
+    color:white;
+}
+button{
+    background-color: transparent ;
+    border: none;
+    color: white;
+    cursor:pointer;
+    font-size: 26px;
+}
+@media screen and (max-width: 1200px){
+    html {font-size: 16px;                  
+    }
+    button {font-size:20px;
+    }
+}
+form{
+    font-family: 'Architects Daughter', cursive;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+h5 {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#df {
+    border-top: rgb(231, 231, 12) solid 2px;
+    background-color: transparent;
+
+}
+p{font-family: 'Architects Daughter', cursive;}
+.navbar-nav > li{
+ 
+ padding-left:10px;
+ padding-right:10px;
+ font-size: 26px;
+ text-shadow: rgb(214, 214, 209) 10px 10px 20px;
+color:white;
+}
+
+.navbar-toggler-icon {
+ width: 20px;
+ border: solid blanchedalmond 4px;
+ border-radius: 10%;
+ transition: all 0.1s;
+ color:white;}
+
+.navbar-toggler-icon:hover {
+ width: 21px;
+ border: solid rgba(5, 5, 4, 0.993) 6px;
+ }
+
+ .BoxNav{
+ border-bottom: solid rgb(199, 155, 12) 4px;
+ background-color: black;
+         }

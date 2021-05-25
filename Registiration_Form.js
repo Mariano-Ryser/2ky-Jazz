@@ -1,5 +1,7 @@
 const name = document.getElementById('name')
+const lastname = document.getElementById('lastname')
 const password = document.getElementById('password')
+const email = document.getELementById('email')
 const form = document.getElementById('form')
 const errorElement = document.getElementById('error')
 
@@ -10,6 +12,17 @@ form.addEventListener('submit',(e) => {
         messages.push('Name is required')
     }
 
+    if (lastname.value === '' || lastname.value == null){
+        messages.push('Last Name is required')
+    }
+    
+    if (name.value === '' || name.value == null){
+        messages.push('Phone is required')
+    }
+    if (name.value === '' || name.value == null){
+        messages.push('Email is required')
+    }    
+
     if (password.value.length <= 6) {
             messages.push('Password must be longer than 6 characters')
     }
@@ -19,7 +32,7 @@ form.addEventListener('submit',(e) => {
     if (password.value === 'password') {
         messages.push('Password cannot be password')
     }
-        
+
     if (messages.length > 0) {
     e.preventDefault() 
     errorElement.innerText = messages.join(', ')
