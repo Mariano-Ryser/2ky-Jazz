@@ -3,7 +3,7 @@ Roles:
 - Jacqueline-Mate
 - Ksenija-Mate
 - Mariano-designer dev.
-- Patrick-dev
+- Patrick-dev jr
 - Efrat dev.
 
 Contract:
