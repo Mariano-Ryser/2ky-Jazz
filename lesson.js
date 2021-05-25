@@ -1,5 +1,34 @@
 
 //------form function------//
+//-----form activation-----//
+
+function validateFormFields() {
+    var firstName = getInputText("#inputName");
+    var surname = getInputText("#inputSurname");
+    var email = getInputText("#inputEmail");
+    var lesson = getInputText("#inputLesson");
+    var comment = getInputText("#inputComment");
+
+    if (firstName == "") return false;
+    if ( surname== "") return false;
+    if (email == "") return false;
+    if ( lesson == "") return false;
+    if ( comment == "") return false;
+
+     // If we land here then all input element are valid.
+     alert("Thanks - all checked input elements are valid.");
+     return true;
+
+}
+
+
+
+//------check field fill----///
+
+
+
+//----activate all selectors----//
+
 function getInputText(selector) { 
     var element = document.querySelector(selector);
 
@@ -13,9 +42,15 @@ function getInputText(selector) {
     }
 }
 
+//-----post to console----///
 function log(label, value) {
-    console.log(label + ': ' + value);
+    console.log(label + ': ' + value);  
 }
+
+
+
+
+
 //---------button--------///
 
 //Get the button:

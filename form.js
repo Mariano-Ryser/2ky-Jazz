@@ -8,6 +8,7 @@
  *                    if not.                     
  */
  function validateFormFields() {
+    alert("what?");
     var firstName = getInputText("#inputFirstName");
     var lastName = getInputText("#inputLastName");
 
