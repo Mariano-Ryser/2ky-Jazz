@@ -7,10 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="keywords" content="2kyjazz jazz underground class music instrument jam session schedule apply trumpet piano sax guitar open stage double bass choir children gig rehearsal ">
     <meta name="author" content="Patrick Mallát">
-    <meta http-equiv="refresh" content="300">
     <meta name="description" content="2kyjazz schedule and form">
     <!-- sheise bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="undefined" crossorigin="anonymous">
         <style>
             body {
                 background-image: url(caca.jpg);
@@ -22,6 +21,14 @@
 
             h1 {
                 text-align: center;
+                padding-top: 5%;
+                padding-bottom: 1%;
+            }
+
+            h2 {
+                text-align: center;
+                padding-top: 1%;
+                padding-bottom: 3%;
             }
 
             .beeg {
@@ -52,8 +59,9 @@
                 border-color: indigo;
             }
 
-            .pics {
-                justify-content: space-between;
+            img {
+                max-width: 400;
+                max-height: 260;
             }
         </style>
     </head>
@@ -69,22 +77,22 @@
                             <div class="form-group">
                                 <label for="exampleInputMessage12">Full name</label>
                                 <input type="text" class="form-control" id="exampleInputMessage12" aria-describedby="nameHelp" placeholder="Your full name">
-                                <small id="textHelp" class="form-text">Please enter your full name here</small>
+                                <small id="nameHelp" class="form-text">Please enter your full name here</small>
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputMessage123">Eye colour(s)</label>
                                 <input type="text" class="form-control" id="exampleInputMessage123" aria-describedby="eyeHelp" placeholder="blue, brown, greenish-grey etc.">
-                                <small id="textHelp" class="form-text">Please enter your eye colours here</small>
+                                <small id="eyeHelp" class="form-text">Please enter your eye colours here</small>
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputMessage1234">Body shape</label>
                                 <input type="text" class="form-control" id="exampleInputMessage1234" aria-describedby="bodyHelp" placeholder="How would an ex describe you?">
-                                <small id="textHelp" class="form-text">Please enter your body shape here</small>
+                                <small id="bodyHelp" class="form-text">Please enter your body shape here</small>
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputMessage12345">Blood type</label>
                                 <input type="text" class="form-control" id="exampleInputMessage12345" aria-describedby="bloodHelp" placeholder="AB- or 0+ or whatever">
-                                <small id="textHelp" class="form-text">Please enter your blood type here</small>
+                                <small id="bloodHelp" class="form-text">Please enter your blood type here</small>
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Email address</label>
@@ -105,7 +113,7 @@
             </div>
             <br>
             <br>
-            <h1>Program Schedule</h1>
+            <h2>Program Schedule</h2>
             <br>
             <div class="row">
                 <div class="col-xxl-1 col-xl-2 col-md-3 col-sm-4 top mx-auto">
