@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Programs and Schedule</title>
+        <style>
+            html {
+                background: url(https://i.pinimg.com/originals/bc/7b/23/bc7b2345ec4d0d96d1730dda9e614f76.jpg) no-repeat left top fixed; 
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: 40%;
+            }
+
+            h1 {
+                text-align: center;
+            }
+
+            .top, .mid, .bottom {
+                width: 20%;
+                border: solid 3mm;
+                border-radius: 5mm;
+                border-color: teal;
+                padding: 10mm;
+                margin: 10mm;
+            }
+
+            .top {
+                height: 55mm;
+            }
+
+            .mid {
+                height: 40mm;
+            }
+
+            .bottom {
+                height: 85mm;
+            }
+
+            .flex-container {
+                display: flex;
+                flex-direction: row-reverse;
+                flex-wrap: wrap;
+            }
+        </style>
+    </head>
+    <body>
+        <div class=container>
+            <h1>Program Schedule</h1>
+            <div class="flex-container"> 
+                <div class=top class=right>
+                    <h2>Wednesday</h2>
+                    <p>12-14: children's drums class</p>
+                    <p>14-16: children's clarinet class</p>
+                    <p>16-18: teenager's clarinet class</p>
+                    <p>18-20: teenagers' saxophone class</p>
+                    <p>20-22: solo lessons</p>
+                </div>
+                <div class=top class=left>
+                    <h2>Tuesday</h2>
+                    <p>12-14:</p>
+                    <p>14-16:</p>
+                    <p>16-18: children's trumpet class</p>
+                    <p>18-20: teenagers' trumpet class</p>
+                    <p>20-22: solo lessons</p>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class=mid class=right>
+                    <h2>Friday</h2>
+                    <p>16-18: children's piano class</p>
+                    <p>18-20: teenagers' piano class</p>
+                    <p>20-22: solo lessons</p>
+                </div>
+                <div class=mid class=left>
+                    <h2>Thursday</h2>
+                    <p>16-18: children's trombone class</p>
+                    <p>18-20: teenagers' trombone class</p>
+                    <p>20-22: solo lessons</p>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class=bottom class=right>
+                    <h2>Sunday</h2>
+                    <p>08-10: children's jam session</p>
+                    <p>10-12: rehearsal</p>
+                    <p>12-14: lunch break with local cafeteria</p>
+                    <p>14-16: rehearsal</p>
+                    <p>16-18: open mic/stage for youngsters</p>
+                    <p>18-20: gig</p>
+                    <p>20-22: gig (?)</p>
+                    <p>22-24: after party, open mic/stage</p>
+                </div>
+                <div class=bottom class=left>
+                    <h2>Saturday</h2>
+                    <p>08-10: children's choir</p>
+                    <p>10-12: teenagers' choir</p>
+                    <p>12-14: young adults' choir</p>
+                    <p>14-16: senior choir</p>
+                    <p>16-18: solo lessons</p>
+                    <p>18-20: late solo lessons</p>
+                    <p>20-22: late late solo lessons</p>
+                    <p>22-24: </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
