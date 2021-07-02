@@ -12,7 +12,7 @@
 </head>
   <body>
     <!--/////----navi spot--////////-->
-    <div class="container-fluid"> <div class="BoxNav mb-5 ">
+    <div class="container-fluid"><div class="BoxNav mb-5">
         <nav class="navbar navbar-expand-lg pb-5"> 
         <!---///// logo --//////////-->
         <img src="images/LogoMakr-5h3Zc0.png" style= "width: 210px; margin-left: 20px;" alt="logo drawed by Mariano, saxophone with club name 2kyJazz">
@@ -48,7 +48,6 @@
                 <!--////////--lamp down--//////--> 
                 <img src="images/lampe5.png" alt="drawing of yellow lightbulb, it looks down, drawed by Mariano">
             </div> 
-            <br>
             <!--///////-----right content----///////-->
             <div class="col-sm-8 learning">
                 <h1>Learning to Jazz</h1>
@@ -64,22 +63,16 @@
                         <h2>Saturday</h2>
                         <br>
                         <div class="col block piano";>
-                            <img src="images/keyboard1111.jpeg" alt="hands of dark complexion playing a keyboard, blue and yellow blured background gives Caribbaen feeling">
-                            <p>
-                                Piano
-                            </p>  
+                            <img src="images/keyboard1111.jpeg" onclick="openForm()" alt="hands of dark complexion playing a keyboard, blue and yellow blured background gives Caribbaen feeling">
+                                <button class="open-button" onclick="openForm()">Piano</button> 
                         </div> 
                         <div class="col block saxophone">  
-                            <img src="images/manPlayingTheSaxophone1111.jpg" alt="aged hands of dark complexion holdind saxophone">
-                            <p>
-                                Saxophone
-                            </p>
+                            <img src="images/manPlayingTheSaxophone1111.jpg" onclick="openForm()" alt="aged hands of dark complexion holdind saxophone">
+                                <button class="open-button" onclick="openForm()">Saxophone</button>
                         </div>
                         <div class="col block doublebass">
-                            <img src="images/doubleBass.webp" alt="hands of pale complexion playing double bass in light dimed room">
-                            <p>
-                                Double Bass
-                            </p> 
+                            <img src="images/doubleBass.webp" onclick="openForm()" alt="hands of pale complexion playing double bass in light dimed room">
+                                <button class="open-button" onclick="openForm()">Double Bass</button>
                         </div>
                     </div>
                     <!--////////----right column------///////////-->
@@ -87,46 +80,48 @@
                         <h2>Sunday</h2>
                         <br>
                         <div class="col block drums">
-                            <img src="images/drumSet11111.jpeg" alt="drums set in warm yellow and green lights room">
-                            <p>
-                                Drums
-                            </p>  
-                        </div>
+                            <img src="images/drumSet11111.jpeg" onclick="openForm()" alt="drums set in warm yellow and green lights room">
+                                <button class="open-button" onclick="openForm()">Drums</button> 
+                            </div>
                         <div class="col block guitar">
-                            <img src="images/bassTuning1111111.jpeg" alt="the gentleman tuning his bass, being on stage">
-                            <p>
-                                Guitar
-                            </p>  
+                            <img src="images/bassTuning1111111.jpeg" onclick="openForm()" alt="the gentleman tuning his bass, being on stage">
+                                <button class="open-button" onclick="openForm()">Guitar</button> 
                         </div>
                         <div class="col block singing">
-                            <img src="images/ladyWithMic1111.jpg" alt="singer turn away from vintage microphone while performing, blured background with light reflection">
-                            <p>
-                                Singing
-                            </p>
+                            <img src="images/ladyWithMic1111.jpg" onclick="openForm()" alt="singer turn away from vintage microphone while performing, blured background with light reflection">
+                                <button class="open-button" onclick="openForm()">Singing</button> 
                         </div> 
                     </div>
                 </div>
             </div>
         </div>
         <!--///////--comment field---///////-->
-        <div class="container-fluid field">
-            <form>
-                <div class="form-col-md-4"><h2>Comments Field</h2>
+        <div class="form-popup" id="myForm">
+            <form action="/action_page.php" class="form-container">
+                <div class="form-col-md-4" ><h2>Comments Field</h2>
                     <div class="form-group col-md-4">
-                        <label for="inputName"><h3>Name</h3></label>
-                        <input type="text" class="form-control" id="inputName" placeholder="N...">
+                        <label for="inputName"><h3>Name</h3>
+                        <input type="text"  placeholder="Name...">
+                    </label>
                     </div>
                     <div class="form-group col-md-4">
-                        <label for="inputSurname"><h3>Surname</h3></label>
-                        <input type="text" class="form-control" id="inputSurname" placeholder="S...">
+                        <label for="inputSurname"><h3>Surname</h3>
+                        <input type="text"  placeholder="Surname...">
+                        </label>
                     </div>
                     <div class="form-group col-md-4">
-                        <label for="inputEmail"><h3>Email</h3></label>
-                        <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelpId" placeholder="example@help.com">
+                        <label for="inputEmail"><h3>Email</h3>
+                        <input type="email" aria-describedby="emailHelpId" placeholder="example@help.com">
+                        </label>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputTel"><h3>Phone</h3>
+                        <input type="tel" placeholder="+41...">
+                        </label>
                     </div>
                 </div>
-                <div class="form-group col-md-4">
-                    <label for="inputLesson"><h3>Lesson</h3></label>
+                <div class="form-group col-md-4" alt="selection field to choose desired lesson, that were mentioned above"> 
+                    <label for="inputLesson"><h3>Lesson</h3>
                         <select id="inputLesson" class="form-control">
                             <option selected="">Select</option>
                             <option>Piano</option>
@@ -135,30 +130,31 @@
                             <option>Drums</option>
                             <option>Guitar</option>
                             <option>Singing</option>
-                        </select> 
+                        </select>
+                    </label> 
                     <div class="form-group">  
                         <label for="inputComment"><h3>Comment</h3></label>     
                             <textarea id="inputComment" cols="30" rows="10" class="form-text text-muted form-control" placeholder="Enter text here"></textarea>
                     </div>
                 </div>
             </form>
-            <!-- //////-----go to top button---////--->
-            <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
             <!---////----- submit button----/////------>
-            <button id="submitBtn" onclick="validateFormFields();"><h4>Submit</h4></button>
-        </div>  
+            <button id="submitBtn" onclick="validateFormFields(); closeForm()">Submit</button>
+        </div> 
+        <!-- //////-----go to top button---////--->
+     <button onclick="topFunction()" id="myBtn">Top</button> 
   <!---//////------footer-----/////-->
   <div class="container-fluid">
       <div id="df" class="container-fluid footer text-center sticky-bottom ">
             <div class="row">
                 <div class= "col-sm-6 col-md-6 col-lg-6 "> 
-                      <a href="">
+                      <a href="#">
                      <img class="icon" alt="Instagram Icon" src="https://static.wixstatic.com/media/d7ffe259c9e54f59837481b3dd0130eb.png/v1/fill/w_30,h_30,al_c,q_85,usm_0.66_1.00_0.01/d7ffe259c9e54f59837481b3dd0130eb.webp" >
                     </a>
-                      <a href="">
+                      <a href="#">
                      <img class="icon" alt="Facebook Icon" src="https://static.wixstatic.com/media/d3470ec8ca26475da4b228f0199b5d3d.png/v1/fill/w_30,h_30,al_c,q_85,usm_0.66_1.00_0.01/d3470ec8ca26475da4b228f0199b5d3d.webp" >
                     </a>
-                      <a href="">
+                      <a href="#">
                      <img class="icon" alt="Twiter Google" src="https://static.wixstatic.com/media/aeb686ff41244d85bc1232fcf7325ec0.png/v1/fill/w_30,h_30,al_c,q_85,usm_0.66_1.00_0.01/aeb686ff41244d85bc1232fcf7325ec0.webp" >
                     </a> 
                 </div> 

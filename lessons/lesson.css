@@ -4,39 +4,35 @@ body{
     font-size: 20px;
 }
 .photo {
-    padding: 0;
+    padding-left: 50px;
+    padding-right:50px;
 }
 .photo img {
     height: 2fr;
     width: 100%;
     padding: 0;
 }
-.field {
-    background-image: url("images/LogoMakr-9hUjML.png");                              
-    background-repeat: no-repeat;                                    
-    background-size: cover; 
-
-}
 .block img{
     border: rgb(11, 29, 4) solid;
     margin: 10px;
     margin-bottom: 20px;
     padding: 10px;
-    height: 290px;
+    height: 200px;
     width: 100%;
     transition: transform .3s;   
 } 
 .block:hover {
     transition: all 2s;
-    -ms-transform: scale(1.5);
-    -webkit-transform: scale(1.5);
-    transform: scale(1.5);
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
     line-height: 15px;
     z-index: 1;
 }
 .learning {
     text-align: center;
     padding: 50px;
+    padding-top:0px;
     justify-content: center;
     align-content: center;    
 }
@@ -48,8 +44,6 @@ body{
 h1 {
     font-family: monospace;
     color: rgb(235, 220, 11);
-    margin:50px;
-    padding-top:20px;
     font-size: 70px;
 }
 h2 {
@@ -58,10 +52,7 @@ h2 {
     padding-top: 50px;
 }
 h3{
-    color: rgb(210, 211, 140); 
-}
-h4{
-    color:black;
+    color: rgb(231, 235, 11); 
 }
 
 p {
@@ -70,10 +61,27 @@ p {
     padding-top: 20px;
     margin: 0, 40px,0 ,40px;
     border:yellow solid;
+    border-radius: 4px;
+}
+.open-button{
+    border: solid yellow;
+    background-color: black;
+    color: yellow;
+    cursor: pointer;
+    padding: 15px;
+    margin-left: 9px;
+    width: 100%;
+    border-radius: 4px;
 }
 #submitBtn{
-    position:;
-    left:170px;
+
+    border: solid yellow;
+    background-color: black;
+    color: yellow;
+    cursor: pointer;
+    padding: 15px;
+    margin:15px;
+    border-radius: 4px;
 }
 #myBtn {
     position: fixed;
@@ -83,22 +91,45 @@ p {
     font-size: 18px;
     border: solid yellow;
     background-color: black;
-    color: white;
+    color: yellow;
     cursor: pointer;
     padding: 15px;
     border-radius: 4px;
   }
   
-  #myBtn:hover {
-    background-color: #555;
+  #myBtn:hover, #submitBtn:hover, .open-button:hover {
+    background-color: rgb(11, 29, 4);
+    transition: all .5s;
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    line-height: 10px;
+    z-index: 1;
   }
   
     
   .pn{
-    transition: transform .3s;
+    transition: .3s;
   }
   .pn:hover {
     transition: .3s;
     transform: scale(1.5);
-    line-height: 15px;
+    line-height: 5px;
   }
+
+  .form-popup {
+      background-color: rgba(131, 96, 96, 0.39);
+    display: none;
+    position: fixed;
+    bottom: 0;
+    border: 3px solid #f1f1f1;
+    border-radius: 5px;
+    z-index: 9;
+    
+  }
+  .field {
+    background-image: url("images/LogoMakr-9hUjML.png");                              
+    background-repeat: no-repeat;                                    
+    background-size: cover; 
+
+}

@@ -41,9 +41,6 @@ function log(label, value) {
 }
 
 
-
-
-
 //---------button--------///
 
 //Get the button:
@@ -64,4 +61,12 @@ function scrollFunction() {
 function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+////----- when click form appear-----//////
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
 }
